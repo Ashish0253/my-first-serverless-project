@@ -1,0 +1,24 @@
+{
+  "name": "my-first-serverless-project",
+  "version": "1.0.0",
+  "description": "Learn how to use serverless functions in less than 30 minutes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashish0253/my-first-serverless-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashish0253/my-first-serverless-project/issues"
+  },
+  "homepage": "https://github.com/Ashish0253/my-first-serverless-project#readme",
+  "devDependencies": {
+    "cross-fetch": "^3.1.5",
+    "node-fetch": "^3.3.0"
+  }
+}
