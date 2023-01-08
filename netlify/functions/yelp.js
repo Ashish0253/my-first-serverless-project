@@ -2,6 +2,9 @@ const fetch = require("cross-fetch");
 
 exports.handler = async function (event, context) {
   const eventBody = JSON.parse(event.body);
+
+  console.log(eventBody);
+
   const term = eventBody.term;
   const location = eventBody.location;
   const sortBy = eventBody.sortBy;
@@ -41,6 +44,9 @@ exports.handler = async function (event, context) {
         statusCode: 203,
         headers: {
           "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "https://localhost:3000",
+          "Access-Control-Allow-Credentials": true,
+          "Access-Control-Allow-Methods": "POST",
         },
         body: JSON.stringify(yelpResponse),
       };
